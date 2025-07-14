@@ -1,0 +1,21 @@
+# ОС
+.DS_Store
+Thumbs.db
+
+# node.js (на майбутнє)
+node_modules/
+.env
+
+# VS Code
+.vscode/
+
+# логи
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# інші кеші
+.cache/
+dist/
+build/
