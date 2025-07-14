@@ -48,6 +48,4 @@ CinemaClub/
 ---
 
 ## 🧑‍💻 Автор
- 
-📧 [ivansstef@gmail.com](mailto:ivansstef@gmail.com)  
 🔗 [github.com/ivansstef](https://github.com/ivansstef)
