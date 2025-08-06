@@ -27,3 +27,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE }}
+      - name: Upload GitLeaks report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gitleaks-report
+          path: results.sarif
+          retention-days: 5
+          if-no-files-found: warn
