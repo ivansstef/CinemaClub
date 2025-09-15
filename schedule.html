@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Розклад | CinemaClub</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Головна</a> |
+        <a href="about.html">Про клуб</a> |
+        <a href="schedule.html">Розклад</a> |
+        <a href="reviews.html">Рецензії</a> |
+        <a href="contacts.html">Контакти</a>
+    </nav>
+    <h1>Розклад показів</h1>
+    <table>
+        <tr><th>Дата</th><th>Фільм</th><th>Жанр</th></tr>
+        <tr><td>20 вересня</td><td>Інтерстеллар</td><td>Наукова фантастика</td></tr>
+        <tr><td>27 вересня</td><td>Зелена книга</td><td>Драма</td></tr>
+        <tr><td>4 жовтня</td><td>Паразити</td><td>Трилер</td></tr>
+        <tr><td>11 жовтня</td><td>Втеча з Шоушенка</td><td>Драма</td></tr>
+        <tr><td>18 жовтня</td><td>Початок</td><td>Трилер</td></tr>
+    </table>
+    <p>Початок показу о 19:00. Після перегляду — обговорення, чай та печиво!<br>Голосуйте за наступний фільм для перегляду:</p>
+    <form>
+        <label><input type="radio" name="vote" value="inception"> Початок</label><br>
+        <label><input type="radio" name="vote" value="shawshank"> Втеча з Шоушенка</label><br>
+        <label><input type="radio" name="vote" value="parasite"> Паразити</label><br>
+        <button type="button" onclick="alert('Дякуємо за ваш голос!')">Голосувати</button>
+    </form>
+</body>
+</html>
