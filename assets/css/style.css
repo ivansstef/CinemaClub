@@ -146,3 +146,86 @@ footer {
   padding: 15px;
   margin-top: 40px;
 }
+
+/* ===== Таблиці ===== */
+table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+th, td {
+  padding: 12px 18px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+th {
+  background: #ff3d00;
+  color: #fff;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* ===== Секції ===== */
+section, .section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ===== Фото учасників ===== */
+.about img {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  margin-bottom: 10px;
+}
+
+/* ===== Карта ===== */
+iframe {
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* ===== Форми ===== */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 400px;
+  margin: 30px auto;
+}
+input, textarea, button {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+button {
+  background: #ff3d00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #e63a00;
+}
+
+/* ===== Блоки рецензій ===== */
+section h2 {
+  color: #ff3d00;
+  margin-bottom: 10px;
+}
+blockquote {
+  background: #f0f0f0;
+  border-left: 4px solid #ff3d00;
+  padding: 12px 18px;
+  margin: 18px 0;
+  font-style: italic;
+  color: #333;
+}
