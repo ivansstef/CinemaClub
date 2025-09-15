@@ -20,21 +20,56 @@
                 </ul>
             </nav>
         </header>
-    <h1>Розклад показів</h1>
-    <table>
-        <tr><th>Дата</th><th>Фільм</th><th>Жанр</th></tr>
-        <tr><td>20 вересня</td><td>Інтерстеллар</td><td>Наукова фантастика</td></tr>
-        <tr><td>27 вересня</td><td>Зелена книга</td><td>Драма</td></tr>
-        <tr><td>4 жовтня</td><td>Паразити</td><td>Трилер</td></tr>
-        <tr><td>11 жовтня</td><td>Втеча з Шоушенка</td><td>Драма</td></tr>
-        <tr><td>18 жовтня</td><td>Початок</td><td>Трилер</td></tr>
-    </table>
-    <p>Початок показу о 19:00. Після перегляду — обговорення, чай та печиво!<br>Голосуйте за наступний фільм для перегляду:</p>
-    <form>
-        <label><input type="radio" name="vote" value="inception"> Початок</label><br>
-        <label><input type="radio" name="vote" value="shawshank"> Втеча з Шоушенка</label><br>
-        <label><input type="radio" name="vote" value="parasite"> Паразити</label><br>
-        <button type="button" onclick="alert('Дякуємо за ваш голос!')">Голосувати</button>
-    </form>
+    <div class="container">
+        <h1>Розклад показів</h1>
+        
+        <table>
+            <tr>
+                <th>Дата</th>
+                <th>Фільм</th>
+                <th>Жанр</th>
+            </tr>
+            <tr>
+                <td>4 жовтня</td>
+                <td>Паразити</td>
+                <td>Трилер</td>
+            </tr>
+            <tr>
+                <td>11 жовтня</td>
+                <td>Втеча з Шоушенка</td>
+                <td>Драма</td>
+            </tr>
+            <tr>
+                <td>18 жовтня</td>
+                <td>Початок</td>
+                <td>Трилер</td>
+            </tr>
+        </table>
+
+        <p class="schedule-info">
+            Початок показу о 19:00. Після перегляду — обговорення, чай та печиво!
+        </p>
+
+        <div class="voting-section">
+            <h3>Голосуйте за наступний фільм для перегляду:</h3>
+            <form>
+                <div class="voting-options">
+                    <div class="voting-option">
+                        <input type="radio" id="inception" name="vote" value="inception">
+                        <label for="inception">Початок</label>
+                    </div>
+                    <div class="voting-option">
+                        <input type="radio" id="shawshank" name="vote" value="shawshank">
+                        <label for="shawshank">Втеча з Шоушенка</label>
+                    </div>
+                    <div class="voting-option">
+                        <input type="radio" id="parasite" name="vote" value="parasite">
+                        <label for="parasite">Паразити</label>
+                    </div>
+                </div>
+                <button type="button" class="vote-button">Голосувати</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
