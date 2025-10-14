@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Розклад | CinemaClub</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+        <header>
+            <div class="logo">🎬 CinemaClub</div>
+            <nav>
+                <ul>
+                    <!-- Логотип тільки один -->
+                    <li><a href="index.html" class="nav-btn">Головна</a></li>
+                    <li><a href="about.html" class="nav-btn">Про клуб</a></li>
+                    <li><a href="schedule.html" class="nav-btn">Розклад</a></li>
+                    <li><a href="reviews.html" class="nav-btn">Рецензії</a></li>
+                    <li><a href="contacts.html" class="nav-btn">Контакти</a></li>
+                </ul>
+            </nav>
+        </header>
+    <div class="container">
+        <h1>Розклад показів</h1>
+        
+        <table>
+            <tr>
+                <th>Дата</th>
+                <th>Фільм</th>
+                <th>Жанр</th>
+            </tr>
+            <tr>
+                <td>4 жовтня</td>
+                <td>Паразити</td>
+                <td>Трилер</td>
+            </tr>
+            <tr>
+                <td>11 жовтня</td>
+                <td>Втеча з Шоушенка</td>
+                <td>Драма</td>
+            </tr>
+            <tr>
+                <td>18 жовтня</td>
+                <td>Початок</td>
+                <td>Трилер</td>
+            </tr>
+        </table>
+
+        <p class="schedule-info">
+            Початок показу о 19:00. Після перегляду — обговорення, чай та печиво!
+        </p>
+
+        <div class="voting-section">
+            <h3>Голосуйте за наступний фільм для перегляду:</h3>
+            <form>
+                <div class="voting-options">
+                    <div class="voting-option">
+                        <input type="radio" id="inception" name="vote" value="inception">
+                        <label for="inception">Початок</label>
+                    </div>
+                    <div class="voting-option">
+                        <input type="radio" id="shawshank" name="vote" value="shawshank">
+                        <label for="shawshank">Втеча з Шоушенка</label>
+                    </div>
+                    <div class="voting-option">
+                        <input type="radio" id="parasite" name="vote" value="parasite">
+                        <label for="parasite">Паразити</label>
+                    </div>
+                </div>
+                <button type="button" class="vote-button">Голосувати</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
