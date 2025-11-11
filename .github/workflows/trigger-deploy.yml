@@ -1,0 +1,17 @@
+name: Trigger Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger CC-infra deployment
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.INFRA_DEPLOY_TOKEN }}
+          repository: ivansstef/CC-infra
+          event-type: update-cinema
