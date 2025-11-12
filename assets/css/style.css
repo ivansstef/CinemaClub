@@ -148,13 +148,13 @@ section blockquote {
 
 /* ===== Хедер ===== */
 header {
-  background-color: #1f1f1f;
-  color: #fff;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  color: #fff;
+  background-color: #1f1f1f;
 }
 
 .logo {
@@ -162,22 +162,23 @@ header {
   font-weight: bold;
 }
 
+/* ===== Версія Docker ===== */
 .version {
   position: absolute;
   top: 10px;
   right: 40px;
+  padding: 4px 10px;
+  font-family: "Courier New", monospace;
   font-size: 11px;
   color: #888;
   background-color: #2a2a2a;
-  padding: 4px 10px;
   border-radius: 4px;
-  font-family: 'Courier New', monospace;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   gap: 20px;
+  list-style: none;
 }
 
 /* ===== Кнопки навігації ===== */
